@@ -28,7 +28,10 @@ Em seguida restart o apache: sudo systemctl reload apache2
 # git remote add origin https://github.com/deusyvan/eadmvc.git
 # git push -u origin master
 
-* Nota
+* Nota 4: Melhor ferramenta para Banco de dados - DBeaver 7.0.0
+- Configurando crie uma nova conexão usando o plugin MariaDb
+- Dump de banco: selecione o esquema no Database Navigator e seguida Database->Tools->dump ou restore
+
 
 
 
