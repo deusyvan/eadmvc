@@ -2,17 +2,21 @@
 namespace Controllers;
 
 use \Core\Controller;
-use \Models\Usuarios;
+use \Models\Alunos;
 
 class HomeController extends Controller {
 
-	public function index() {
-		$array = array();
+	public function index()
+    {
+		$dados = array();
+		
+		$alunos = new Alunos();
 
-		$usuarios = new Usuarios();
-		$array['lista'] = $usuarios->getAll();
-
-		$this->loadTemplate('home', $array);
-	}
+        if(!$alunos->isLogged()){
+            header("Location: ".BASE_URL."login");
+		}
+		
+		$this->loadTemplate('home', $dados);
+    }
 
 }
