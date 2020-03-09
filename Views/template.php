@@ -10,7 +10,7 @@
     	<div class="topo">
     		<div class="topoint">
     			<div class="topoleft">Ensino à Distância</div>
-    			<div class="toporight"> - <a href="">Sair</a></div>
+    			<div class="toporight"> - <a href="<?php echo BASE_URL; ?>login/logout">Sair</a></div>
     			<div style="clear:both"></div>
     		</div>
     	</div>
